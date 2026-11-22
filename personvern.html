@@ -31,16 +31,17 @@
   <header><img src="icon.png" alt=""><a href="./">Rummy Poengteller</a></header>
 
   <h1>Personvernerklæring</h1>
-  <p class="muted">Sist oppdatert: 17. november 2026</p>
+  <p class="muted">Sist oppdatert: 22. november 2026</p>
 
   <div class="card">
-    <strong>Kort fortalt:</strong> Rummy Poengteller har ingen innlogging, ingen reklame og ingen sporing.
+    <strong>Kort fortalt:</strong> Rummy Poengteller har ingen konto, ingen passord, ingen reklame og ingen sporing.
     Appen lagrer bare spillernavnene du skriver inn og poengene fra spillene, slik at du og vennegruppen din kan se dem.
+    Spiller du online, lagres i tillegg navnet du velger, en tilfeldig anonym ID og kortspillet ved bordet – og bordet slettes automatisk etter et døgn uten aktivitet.
   </div>
 
   <h2>Hvem er ansvarlig</h2>
   <p>Appen er laget og drives av Mohamed Chaaibi, som er ansvarlig for behandlingen av opplysningene som beskrives her.
-  Har du spørsmål, kan du sende e-post til <a href="mailto:mchaa85@gmail.com">mchaa85@gmail.com</a>.</p>
+  Har du spørsmål, kan du sende e-post til <a href="mailto:DIN-EPOST">DIN-EPOST</a>.</p>
 
   <h2>Hvilke opplysninger appen lagrer</h2>
   <table>
@@ -50,11 +51,33 @@
     <tr><td>Hvor lang tid rundene tok</td><td>For tidtakingen i appen</td></tr>
     <tr><td>Gruppekoden til vennegruppen din</td><td>For at medlemmene i gruppen skal se de samme spillene</td></tr>
   </table>
+
+  <h2>Online-spill</h2>
+  <p>Når du spiller online, lagres dette:</p>
+  <table>
+    <tr><th>Opplysning</th><th>Hvorfor</th></tr>
+    <tr><td>Navnet eller kallenavnet du skriver inn ved bordet</td><td>For at de andre ved bordet skal se hvem som spiller og ser på</td></tr>
+    <tr><td>En tilfeldig, anonym bruker-ID (Firebase Authentication, anonym innlogging)</td><td>For å vite hvilke kort som er dine, uten at du trenger konto eller passord. ID-en er ikke knyttet til navn, e-post eller telefonnummer</td></tr>
+    <tr><td>Bordkoden, kortene på hånda, utleggene, kastebunken og poengene</td><td>For at selve kortspillet skal fungere. Bare du kan se kortene på din egen hånd</td></tr>
+  </table>
+  <p>Bordet og alt som hører til det <strong>slettes automatisk</strong> når det ikke har vært brukt på et døgn, eller når alle har forlatt bordet.
+  Når et online-spill er ferdig, kan resultatet lagres i statistikken til vennegruppen din på samme måte som andre spill.</p>
+
+  <h2>Lyd ved bordet</h2>
+  <p>Ved et online-bord kan du velge å bli med på lyd, slik at dere kan snakke sammen mens dere spiller.
+  Appen bruker da mikrofonen din – men bare etter at du har trykket «Bli med på lyd» og gitt tillatelse, og bare mens du er på lyd.
+  Du kan slå av mikrofonen eller forlate lyden når som helst.</p>
+  <p>Lyden sendes direkte til de andre ved bordet gjennom tjenesten <strong>Agora</strong> (Agora Inc.), som formidler den i sanntid.
+  Lyden blir <strong>ikke tatt opp eller lagret</strong>, verken av oss eller av Agora. Agora behandler tekniske opplysninger
+  som IP-adresse og tilkoblingstid for å kunne levere tjenesten, og kan bruke servere utenfor EU/EØS.
+  Les mer i <a href="https://www.agora.io/en/privacy-policy/">Agoras personvernerklæring</a>.</p>
   <p>Appen samler <strong>ikke</strong> inn e-postadresse, telefonnummer, posisjon, kontakter, bilder eller annen informasjon fra telefonen din.
   Du trenger ikke lage en konto. Vi bruker ingen analyseverktøy, reklame eller sporing.</p>
   <p>Skriv gjerne bare fornavn eller kallenavn på spillerne. Ikke skriv inn sensitive opplysninger i navnefeltene.</p>
 
   <h2>Hvor opplysningene lagres</h2>
+  <p><strong>Online-spill</strong> lagres i Google Firebase (Cloud Firestore, Authentication og Cloud Functions) på servere i Europa.
+  Google behandler opplysningene på vegne av oss, som databehandler.</p>
   <p><strong>Bruker du en vennegruppe,</strong> lagres opplysningene i Google Firebase (Cloud Firestore) på servere i Europa.
   Google behandler opplysningene på vegne av oss, som databehandler. Alle som har gruppekoden, kan se og endre spillene i gruppen.
   Del derfor bare koden med folk du vil spille med.</p>
@@ -65,9 +88,10 @@
   (personvernforordningen artikkel 6 nr. 1 bokstav b og f).</p>
 
   <h2>Hvor lenge opplysningene lagres</h2>
-  <p>Spillene lagres til du eller noen i vennegruppen sletter dem. Du kan når som helst slette enkeltspill i appen under
+  <p>Online-bord slettes automatisk etter et døgn uten aktivitet.
+  Spillene i statistikken lagres til du eller noen i vennegruppen sletter dem. Du kan når som helst slette enkeltspill i appen under
   <em>Statistikk → Alle spill</em>, og fjerne spillere under <em>Spillere</em>.
-  Vil du at hele gruppen og alle spillene skal slettes, sender du gruppekoden til <a href="mailto:mchaa85@gmail.com">mchaa85@gmail.com</a>,
+  Vil du at hele gruppen og alle spillene skal slettes, sender du gruppekoden til <a href="mailto:DIN-EPOST">DIN-EPOST</a>,
   så sletter vi den innen 30 dager.</p>
 
   <h2>Dine rettigheter</h2>
@@ -82,10 +106,13 @@
   <p>Endrer vi denne erklæringen, oppdaterer vi datoen øverst på siden.</p>
 
   <h2 lang="en">In English</h2>
-  <p lang="en">Rummy Poengteller has no login, no ads and no tracking. It only stores the player names you enter, game scores,
+  <p lang="en">Rummy Poengteller has no account, no password, no ads and no tracking. It only stores the player names you enter, game scores,
   round times and your group code. With a friend group, this data is stored in Google Firebase (Cloud Firestore) in Europe
   and is visible to anyone who has the group code; without a group, everything stays on your phone.
-  You can delete games and players in the app at any time, or email <a href="mailto:mchaa85@gmail.com">mchaa85@gmail.com</a> to have a whole group deleted.</p>
+  When you play online, the app also stores the name you choose at the table, a random anonymous user ID (Firebase anonymous sign-in)
+  and the card game itself (your hand is visible only to you). Online tables are deleted automatically after 24 hours without activity.
+  If you join voice at a table, your microphone audio is sent live to the others at the table through Agora. Audio is never recorded or stored.
+  You can delete games and players in the app at any time, or email <a href="mailto:DIN-EPOST">DIN-EPOST</a> to have a whole group deleted.</p>
 
   <footer>© 2026 Rummy Poengteller · <a href="support.html">Støtte</a></footer>
 </div>
